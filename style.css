@@ -1,0 +1,16 @@
+:root{
+  --bg:#001014; --panel:#071b1f; --accent:#0fffc1; --muted:#7fd3c2; --text:#c9fff1;
+  font-family:"Courier New", monospace;
+}
+html,body{height:100%;margin:0;background:#001014;color:var(--text);}
+.wrap{max-width:920px;margin:18px auto;padding:18px;border-radius:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+  border:1px solid rgba(0,255,192,0.1);}
+header{margin-bottom:12px}
+h1{color:var(--accent)}
+.board{display:grid;grid-template-columns:1fr 300px;gap:12px}
+.panel{padding:12px;background:var(--panel);border-radius:8px}
+textarea,input{width:100%;margin-bottom:8px;background:#000;border:1px solid var(--accent);color:var(--text)}
+button{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:6px 12px;cursor:pointer}
+.post{border-top:1px solid rgba(255,255,255,0.1);padding:8px 0}
+.meta{color:var(--muted);font-size:12px}
