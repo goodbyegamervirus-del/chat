@@ -1,40 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>RetroBoard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1>RetroBoard</h1>
-      <p class="lead">a retro chatroom • no accounts</p>
-    </header>
-
-    <div class="board">
-      <div class="panel left" id="feed">
-        <div id="posts"></div>
-      </div>
-
-      <div class="panel right">
-        <form id="composer">
-          <label>Name (optional)</label>
-          <input id="name" type="text" maxlength="40" placeholder="anon">
-
-          <label>Message</label>
-          <textarea id="text" maxlength="1000" placeholder="Say something..."></textarea>
-
-          <div class="row controls">
-            <button id="postBtn" type="submit">Post</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Firebase SDKs -->
-  <script type="module" src="app.js"></script>
-</body>
-</html>
+<div class="wrapper">
+	<div class="setuser">
+		<p>Welcome! Please choose a username.</p>
+		<div class="wrapper">
+			<input class="username" type="text" maxlength=20 placeholder="Enter a username"/><button>Confirm</button>
+		</div>
+	</div>
+	<div class="dim"></div>
+	<div class="chat">
+		<div class="reminder">Welcome! Remember to be kind to others&hellip; (MADE IN 2016)</div>
+		<div class="chatbox">
+			<div class="messages-wrapper">
+				<div class="status">Searching for a partner...</div>
+			</div>
+		</div>
+		<div class="reply">
+			<div class="typing"></div>
+			<div class="wrapper">
+				<input class="usermsg" type="text" placeholder="Say hello!" disabled/><button class="send">Send</button>
+			</div>
+		</div>
+	</div>
+</div>
