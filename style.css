@@ -12,5 +12,6 @@ h1{color:var(--accent)}
 .panel{padding:12px;background:var(--panel);border-radius:8px}
 textarea,input{width:100%;margin-bottom:8px;background:#000;border:1px solid var(--accent);color:var(--text)}
 button{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:6px 12px;cursor:pointer}
+button:hover{background:rgba(0,255,192,0.1)}
 .post{border-top:1px solid rgba(255,255,255,0.1);padding:8px 0}
-.meta{color:var(--muted);font-size:12px}
+.meta{color:var(--muted);font-size:12px;margin-bottom:4px}
